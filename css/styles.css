@@ -104,20 +104,3 @@ align-items: center;
     width: 40%;
    
 }
-.formulario {
-    position: absolute;
-   
-    width: 350px;
-    padding: 30px;
-    border: 1px solid #000;
-    margin-left: 50px;
-   
-  }
-  .formulario .input-info {
-    
-    display: flex;
-    justify-content: space-around;
-  
-    margin-bottom: 15px;
-  }
- 
