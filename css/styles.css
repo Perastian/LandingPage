@@ -81,6 +81,18 @@ align-items: center;
     gap: 20px;
     
 }
+.nosotros a{
+    background:rgba(97, 179, 24, 0.379);
+    width: 18%;
+    border: 1px solid rgba(0, 128, 0, 0.187);
+    color: black;
+    font-weight: bold;
+    border-radius:  30px;
+}
+.nosotros a:hover{
+    color: rgba(9, 28, 5, 0.523);
+    background:rgba(96, 179, 24, 0.251);
+}
 .introduccion{
     width: 90%;
     margin-left: 50px;
