@@ -1,46 +1,111 @@
+:root{
+    --texto: rgb(1, 22, 6);
+    --barras:#f8f8f8;  /* fallback for old browsers */-webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  
+    
+}
 *{
- background-color: black;   
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  box-sizing: border-box;
  padding: 0%;
  margin: 0%;
  text-decoration: none;
+ color: var(--texto);
 }
+
 .encabezado{
-    
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
+    margin-top: 0%;
     
-    
-    
-    
+background:var(--barras);
+position: fixed;
+align-items: center;
 }
+
 .nav-bar a{
-    color: rgb(8, 143, 29);
+    color: var(--texto);
     font-weight: bold;
 }
 .nav-bar a:hover{
-    color: rgb(201, 236, 193);
+    color: rgba(9, 28, 5, 0.523);
 }
 
 .nav-bar a:target{
-    border-bottom: solid 2px green ;
+    border-top: solid 2px rgba(19, 72, 19, 0.557) ;
     
 }
 .nav-bar{
     text-align: center;
-    width: 100px;
+    width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    font-size: larger;
+    
+   
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .img{
-   
-    width: 120px;
-    height: 120px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+}
+.carrito{
+    width: 30px;
+    height: 30px;
+}
+.container{
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    height: 100vh;
 }
 
+
+.hero{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 190px;
+}
+.nosotros{
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+.introduccion{
+    width: 90%;
+    margin-left: 50px;
+}
+.eslogan{
+    font-size: 60px;
+}
+.imagen-hero{
+    width: 40%;
+   
+}
+.formulario {
+    position: absolute;
+   
+    width: 350px;
+    padding: 30px;
+    border: 1px solid #000;
+    margin-left: 50px;
+   
+  }
+  .formulario .input-info {
+    
+    display: flex;
+    justify-content: space-around;
+  
+    margin-bottom: 15px;
+  }
+ 
