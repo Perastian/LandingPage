@@ -26,6 +26,12 @@
     height: 65px;
     padding: 0px 30px;
 }
+.checkbox{
+    display: none;
+}
+.menu-label{
+    display: none;
+}
 .nav-bar,
 .navbar-list{
     color: var(--texto);
@@ -179,3 +185,4 @@ footer{
     width: 25px;
     margin-right: 20px;
 }
+/* MEDIAS QUERIS */

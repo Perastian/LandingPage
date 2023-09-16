@@ -1,0 +1,38 @@
+@media(max-width: 992px){
+    .img{
+        width: 40px;
+        margin-top: 6px;
+    }
+    .navbar-list{
+        gap:20px;
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        display: none;
+        flex-direction: column;
+        background-color: var(--barras);
+        border: 0px 2px 2px solid wheat;
+        border-radius: 0px 0px 15px 15px;
+        padding: 45px 30px;
+       
+        gap: 25px;
+        z-index: 2;
+    }
+
+    .menu-label{
+        display: flex;
+        margin-right: 750px;
+        cursor: pointer;
+    }
+    #check:checked + .navbar-list{
+        display: flex;
+
+    }
+}
+@media(max-width: 412px){
+   
+    .navbar-list{
+        gap:10px
+        
+    }
+}
