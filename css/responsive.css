@@ -29,41 +29,77 @@
 
     }
 }
-@media(max-width: 420px){
+@media(max-width: 973px){
+    .img{
+        width: 40px;
+        margin-top: 6px;
+    }
+    .navbar-list{
+        gap:20px;
+        position: absolute;
+        top: 65px;
+        left: 5%;
+        display: none;
+        flex-direction: column;
+        background-color: var(--barras);
+        border: 0px 2px 2px solid wheat;
+        border-radius: 0px 0px 15px 15px;
+        padding: 45px 30px;
+       
+        gap: 25px;
+        z-index: 2;
+    }
+
+    .menu-label{
+        display: flex;
+        margin-right: 500px;
+        cursor: pointer;
+    }
+    #check:checked + .navbar-list{
+        display: flex;
+
+    }
+}
+
+@media(max-width: 730px){
    *{
     font-size: large;
    }
     .navbar-list{
-        gap:10px
+        gap: 20px
         
     }
     .menu-label{
-        margin-right: 200px;
+        margin-right: 500px;
     }
     .container{
-        gap: 10px;
+        gap: 40px;
     }
     .hero{
         flex-direction: column;
         justify-content: center;
         text-align: center;
         flex-wrap: nowrap;
-        margin-top: 80px;
+        margin-top: 90px;
     }
     .nosotros{
         width: 100%;
-        margin-left: 20px;
-        gap: 10px;
+        margin-left: 30px;
+        gap: 20px;
+       
+    }
+    .nosotros span{
+        font-size: 30px;
     }
     .eslogan{
-        font-size: 50px;
+        font-size: 60px;
     }
     .ver-prod{
         display: none;
     }
     .imagen-hero{
-        width:380px ;
-        height: 300px;
+        width:580px ;
+        height: 400px;
         margin: 20px;
     }
     
@@ -71,10 +107,11 @@
         display: none;
     }
     .ventaja{
-        font-size: 30px;
+        font-size: 40px;
     }
     .card{
-        padding: 20px;
+        padding: 60px;
+        flex-direction: column;
     }
 
     .servicios,
@@ -86,13 +123,17 @@
        
         text-align: center; 
         width: 90%;
-        height: 50vh;
+        height: 40vh;
         border: rgba(224, 142, 9, 0.215) solid 2px;
+    }
+    .servicios p,
+    .productos p{
+        font-size: 25px;
     }
 
 .icon-servicio,
 .icon-productos{
-    width: 30px;
+    width: 80px;
     /* margin: 20px 150px; */
   
 }
@@ -116,3 +157,186 @@ background: linear-gradient(to right, #f7b733, #fc801a6b); /* W3C, IE 10+/ Edge,
 
 }
 }
+@media(max-width: 676px){
+    *{
+     font-size: large;
+    }
+     .navbar-list{
+         gap:10px
+         
+     }
+     .menu-label{
+         margin-right: 200px;
+     }
+     .container{
+         gap: 10px;
+     }
+     .hero{
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         flex-wrap: nowrap;
+         margin-top: 80px;
+     }
+     .nosotros{
+         width: 100%;
+         margin-left: 20px;
+         gap: 10px;
+     }
+     .eslogan{
+         font-size: 50px;
+     }
+     .ver-prod{
+         display: none;
+     }
+     .imagen-hero{
+         width:460px ;
+         height: 300px;
+         margin: 20px;
+     }
+     
+     .introduccion{
+         display: none;
+     }
+     .ventaja{
+         font-size: 30px;
+     }
+     .card{
+         padding: 20px;
+         flex-direction: column;
+     }
+ 
+     .servicios,
+     .productos{
+         
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+        
+         text-align: center; 
+         width: 90%;
+         height: 50vh;
+         border: rgba(224, 142, 9, 0.215) solid 2px;
+     }
+ 
+ .icon-servicio,
+ .icon-productos{
+     width: 30px;
+     /* margin: 20px 150px; */
+   
+ }
+ .icon-productos{
+     margin-top: 20px;
+ }
+     footer{
+         height: 100vh;
+         flex-direction: column;
+         justify-content: center;
+         
+         background: #fc921aa1;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #f7b633af, #fc4b1a8a);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #f7b733, #fc801a6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+     }
+     .ubicacion,
+ .contactos,
+ .redes{
+     padding: 10px;
+ 
+ }
+ }
+@media(max-width: 480px){
+    *{
+     font-size: large;
+    }
+     .navbar-list{
+         gap:10px
+         
+     }
+     .menu-label{
+         margin-right: 280px;
+     }
+     .container{
+         gap: 20px;
+     }
+     .hero{
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+         flex-wrap: nowrap;
+         margin-top: 100px;
+     }
+     .nosotros{
+         
+         margin-left: 10px;
+         gap: 10px;
+     }
+     .nosotros span{
+        font-size: 20px;
+    }
+     .eslogan{
+         font-size: 40px;
+     }
+     .ver-prod{
+         display: none;
+     }
+     .imagen-hero{
+         width:440px ;
+         height: 250px;
+         margin: 20px;
+     }
+     
+     .introduccion{
+         display: none;
+     }
+     .ventaja{
+         font-size: 30px;
+     }
+     .card{
+         padding: 20px;
+         flex-direction: column;
+     }
+ 
+     .servicios,
+     .productos{
+         
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+        
+         text-align: center; 
+         width: 90%;
+         height: 50vh;
+         border: rgba(224, 142, 9, 0.215) solid 2px;
+     }
+     .servicios p,
+     .productos p{
+        font-size: 20px;
+     }
+ 
+ .icon-servicio,
+ .icon-productos{
+     width: 50px;
+     /* margin: 20px 150px; */
+   
+ }
+ .icon-productos{
+     margin-top: 20px;
+ }
+     footer{
+         height: 90vh;
+         flex-direction: column;
+         justify-content: center;
+         
+         background: #fc921aa1;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #f7b633af, #fc4b1a8a);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #f7b733, #fc801a6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+     }
+     .ubicacion,
+ .contactos,
+ .redes{
+     padding: 10px;
+ 
+ }
+ }
