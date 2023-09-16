@@ -29,10 +29,89 @@
 
     }
 }
-@media(max-width: 412px){
-   
+@media(max-width: 420px){
+   *{
+    font-size: large;
+   }
     .navbar-list{
         gap:10px
         
     }
+    .menu-label{
+        margin-right: 200px;
+    }
+    .container{
+        gap: 10px;
+    }
+    .hero{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-top: 80px;
+    }
+    .nosotros{
+        width: 100%;
+        margin-left: 20px;
+        gap: 10px;
+    }
+    .eslogan{
+        font-size: 50px;
+    }
+    .ver-prod{
+        display: none;
+    }
+    .imagen-hero{
+        width:380px ;
+        height: 300px;
+        margin: 20px;
+    }
+    
+    .introduccion{
+        display: none;
+    }
+    .ventaja{
+        font-size: 30px;
+    }
+    .card{
+        padding: 20px;
+    }
+
+    .servicios,
+    .productos{
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        text-align: center; 
+        width: 90%;
+        height: 50vh;
+        border: rgba(224, 142, 9, 0.215) solid 2px;
+    }
+
+.icon-servicio,
+.icon-productos{
+    width: 30px;
+    /* margin: 20px 150px; */
+  
+}
+.icon-productos{
+    margin-top: 20px;
+}
+    footer{
+        justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+        background: #fc921aa1;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7b633af, #fc4b1a8a);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7b733, #fc801a6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+    .ubicacion,
+.contactos,
+.redes{
+    padding: 10px;
+
+}
 }
