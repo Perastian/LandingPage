@@ -1,9 +1,10 @@
 :root{
     --texto: rgb(1, 22, 6);
-    --barras:#f8f8f8;  /* fallback for old browsers */-webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    --barras:rgb(255, 246, 215);
   
     
 }
+
 *{
  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  box-sizing: border-box;
@@ -11,41 +12,45 @@
  margin: 0%;
  text-decoration: none;
  color: var(--texto);
+ list-style: none;
 }
 
 .encabezado{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    margin-top: 0%;
-    
-background:var(--barras);
-position: fixed;
-align-items: center;
+    align-items: center;
+    background:var(--barras);
+    position: fixed;
+    align-items: center;
+    height: 65px;
+    padding: 0px 30px;
 }
-
-.nav-bar a{
+.nav-bar,
+.navbar-list{
     color: var(--texto);
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.nav-bar a:hover{
+.navbar-list{
+    gap:90px
+}
+.navbar-list a:hover{
     color: rgba(9, 28, 5, 0.523);
 }
 
-.nav-bar a:target{
-    border-top: solid 2px rgba(19, 72, 19, 0.557) ;
+/* .navbar-list > ul> li> a :target{
+    border: solid 2px rgba(19, 72, 19, 0.557) ;
+    color: aliceblue;
     
-}
-.nav-bar{
+} */
+/* .nav-bar{
     text-align: center;
     width: 80%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-   
     font-family: Arial, Helvetica, sans-serif;
-}
+} */
 
 .img{
     width: 60px;
@@ -57,21 +62,26 @@ align-items: center;
     height: 30px;
 }
 .container{
-    background: #abbaab;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #F7971E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFD200, #F7971E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFD200, #F7971E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
     display: flex;
     flex-direction: column;
     gap: 90px;
-    height: 100vh;
+    
+    height: 100%;
 }
 
 
 .hero{
     display: flex;
+    flex-wrap: wrap;
     width: 90%;
     justify-content: space-between;
     margin-top: 190px;
+    height: 50%;
 }
 .nosotros{
     width: 50%;
@@ -82,25 +92,90 @@ align-items: center;
     
 }
 .nosotros a{
-    background:rgba(97, 179, 24, 0.379);
+    background:rgba(203, 121, 39, 0.379);
     width: 18%;
-    border: 1px solid rgba(0, 128, 0, 0.187);
+    border: 1px solid rgba(128, 111, 0, 0.187);
     color: black;
     font-weight: bold;
     border-radius:  30px;
 }
 .nosotros a:hover{
     color: rgba(9, 28, 5, 0.523);
-    background:rgba(96, 179, 24, 0.251);
-}
-.introduccion{
-    width: 90%;
-    margin-left: 50px;
+    background:rgb(179, 164, 24);
 }
 .eslogan{
-    font-size: 60px;
+    font-size: 80px;
 }
+.introduccion,
+.ventaja{
+    width: 90%;
+    margin-left: 50px;
+    
+   
+}
+.ventaja{
+    text-align: center;
+}
+.card{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    
+}
+.servicios,
+.productos{
+    /* margin-left: 50px;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    gap: 40px;
+    width: 30%;
+    height: 40vh;
+    border: rgba(224, 142, 9, 0.215) solid 2px;
+}
+.icon-servicio,
+.icon-productos{
+    width: 80px;
+    /* margin: 20px 150px; */
+  
+}
+.ventaja{
+    font-size: 70px;
+
+}
+
 .imagen-hero{
     width: 40%;
    
+}
+footer{
+    background: var(--barras);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+.ubicacion,
+.contactos,
+.redes{
+    padding: 30px;
+
+}
+
+.contactos,
+.redes
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.icon{
+    width: 25px;
+    margin-right: 20px;
 }
