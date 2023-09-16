@@ -100,9 +100,10 @@
     margin-top: 20px;
 }
     footer{
-        justify-content: center;
+        height: 100vh;
         flex-direction: column;
         justify-content: center;
+        padding-bottom:  190px;
         background: #fc921aa1;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f7b633af, #fc4b1a8a);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f7b733, #fc801a6b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
